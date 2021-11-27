@@ -40,10 +40,9 @@ This lets you decide what service to start while only needing one image, adherin
 ### TAKY
 |Variable|Type|
 |-----|----|
-|hostname|string|
+|server_address|string|
 |node_id||string|
 |bind_ip|string|
-|public_ip|string|
 |redis|bool or connection string|
 
 ### COT SERVER
@@ -57,7 +56,6 @@ This lets you decide what service to start while only needing one image, adherin
 |Variable|Type|
 |-----|----|
 |upload_path|string|
-|fqdnoverride|string|
 
 ### SSL
 |Variable|Type|
