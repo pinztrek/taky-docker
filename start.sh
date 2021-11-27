@@ -22,14 +22,20 @@ source /common/env.sh
         #Certgen
         if [[ "$mode" == "certgen" ]]; then
             echo "Starting certgen";
-            source /common/start-taky-certgen.sh       
+            source /common/start-taky-certgen.sh
+        fi
     #Checks for COT mode:
         #COT
         if [[ "$mode" == "cot" ]]; then
             echo "Starting COT Server";
             source /common/start-taky-cot.sh
+        fi
     #Checks for datapackage service mode:
         #Data
         if [[ "$mode" == "data" ]]; then
+        #Ugly hacks go here
+        #FQDN Override
             echo "Starting Datapacakage Server";
-            source /common/start-taky-data.sh 
+            source /common/start-taky-data.sh
+        fi
+    fi
