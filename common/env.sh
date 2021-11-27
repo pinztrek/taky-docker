@@ -4,11 +4,11 @@ CONFY=/data/conf/taky.conf
 
 #TAKY
 #hostname
-if [ -z "${hostname}" ]; then
+if [ -z "${server_address}" ]; then
 	echo "Using default hostname"
 else
-	echo "Setting hostname to ${hostname}"
-	crudini --set $CONFY taky hostname ${hostname}
+	echo "Setting server_address to ${server_address}"
+	crudini --set $CONFY taky hostname ${server_address}
 fi
 
 #node_id
@@ -27,13 +27,6 @@ else
 	crudini --set $CONFY taky bind_ip ${bind_ip}
 fi
 
-#public_ip
-if [ -z "${public_ip}" ]; then
-	echo "Using default public_ip"
-else
-	echo "Setting public_ip to ${public_ip}"
-	crudini --set $CONFY taky public_ip ${public_ip}
-fi
 
 #redis
 if [ -z "${redis}" ]; then
