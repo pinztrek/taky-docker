@@ -35,4 +35,4 @@ source /common/env.sh
         if [[ "$mode" == "data" ]]; then
             echo "Starting Datapacakage Server";
             source /common/start-taky-data.sh  
-    fi
+        fi
