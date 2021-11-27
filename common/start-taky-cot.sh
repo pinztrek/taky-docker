@@ -26,6 +26,7 @@ else
 		redis-server --daemonize yes
 	else
 		echo "Redis not True and not empty, assuming connection string."
+	fi
 fi
 
 #Starting taky
