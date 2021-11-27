@@ -14,26 +14,27 @@ echo "Adding env variables"
 source /common/env.sh
 
 #Check if mode is selected:
-    if [ -z "${mode}" ]; then
-        echo "No mode selected, see readme";
-        exit
-    else
-    #Checks for certgen mode:
-        #Certgen
-        if [[ "$mode" == "certgen" ]]; then
-            echo "Starting certgen";
-            source /common/start-taky-certgen.sh
-        fi
-    #Checks for COT mode:
-        #COT
-        if [[ "$mode" == "cot" ]]; then
-            echo "Starting COT Server";
-            source /common/start-taky-cot.sh
-        fi
-    #Checks for datapackage service mode:
-        #Data
-        if [[ "$mode" == "data" ]]; then
-            echo "Starting Datapacakage Server";
-            source /common/start-taky-data.sh
-        fi
+if [ -z "${mode}" ]; then
+    echo "No mode selected, see readme";
+    exit
+else
+#Checks for certgen mode:
+    #Certgen
+    if [[ "$mode" == "certgen" ]]; then
+        echo "Starting certgen";
+        source /common/start-taky-certgen.sh
     fi
+#Checks for COT mode:
+    #COT
+    if [[ "$mode" == "cot" ]]; then
+        echo "Starting COT Server";
+        source /common/start-taky-cot.sh
+    fi
+#Checks for datapackage service mode:
+    #Data
+    if [[ "$mode" == "data" ]]; then
+    #FQDN Override
+        echo "Starting Datapacakage Server";
+        source /common/start-taky-data.sh
+    fi
+fi
