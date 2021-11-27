@@ -33,8 +33,6 @@ source /common/env.sh
     #Checks for datapackage service mode:
         #Data
         if [[ "$mode" == "data" ]]; then
-        #Ugly hacks go here
-        #FQDN Override
             echo "Starting Datapacakage Server";
             source /common/start-taky-data.sh
         fi
