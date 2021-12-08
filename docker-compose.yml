@@ -1,4 +1,6 @@
 version: "2"
+volumes:
+  resin-data:
 services:
   taky-cot:
     image: skadakar/taky:unified
@@ -12,7 +14,8 @@ services:
      - mode=cot
      - public_ip=123.123.123.123
     volumes:
-      - /root/data/:/data
+     - resin-data:/root/data
+
 #  taky-data:
 #    image: skadakar/taky:unified
 #   container_name: taky-data
@@ -25,5 +28,4 @@ services:
 #     - public_ip=123.123.123.123
 #    volumes:
 #      - /root/data/:/data
-volumes:
-        data:
+
