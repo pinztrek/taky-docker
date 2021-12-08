@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # This script detects the mode the image is running in and starts the relevant service.
 
 echo "Creating needed folder structure for Taky to work"
