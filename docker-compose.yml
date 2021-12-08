@@ -3,7 +3,7 @@ volumes:
   resin-data:
 services:
   taky-cot:
-    image: skadakar/taky:unified
+    image: skadakar/taky
     container_name: taky-cot
     user: "1000"
     ports:
