@@ -83,4 +83,5 @@ FQDN override for datapackages should not be needed in the future
 
 SSL/TCP for datapackages is hacked in the in start.sh for FQDN override.
 
-
+<https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/pinztrek/taky-docker>
+<br> or this button: [![](https://www.balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy)
