@@ -1,5 +1,0 @@
-#applicationConfigVariables:
-#  - BALENA_HOST_CONFIG_gpu_mem: 128
-applicationEnvironmentVariables:
-  - bind_ip: 0.0.0.0
-  - public_ip: 172.16.30.41
